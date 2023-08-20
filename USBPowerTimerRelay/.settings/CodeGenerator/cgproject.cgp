@@ -1,5 +1,9 @@
 ﻿<SerializableData>
   <SerializableData name="39a9d609-9774-41fe-9e4e-5c50dfa1451e">
+    <DataElement key="pior4" value="0">
+    </DataElement>
+    <DataElement key="piorfixed" value="True">
+    </DataElement>
     <DataElement key="pior1" value="0">
     </DataElement>
     <DataElement key="pior0" value="0">
@@ -7,10 +11,6 @@
     <DataElement key="pior3" value="0">
     </DataElement>
     <DataElement key="pior2" value="0">
-    </DataElement>
-    <DataElement key="pior4" value="0">
-    </DataElement>
-    <DataElement key="PiorFixed" value="False">
     </DataElement>
   </SerializableData>
   <SerializableData name="ddf0474d-cac6-44cb-9ff8-cc39defb385c">
@@ -59,6 +59,40 @@
       </SerializableData>
       <SerializableData name="Interrput_10">
         <DataElement key="InusedAs" value="">
+        </DataElement>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="IntToISR">
+      <SerializableData name="INTWDTI">
+        <DataElement key="ISRName" value="r_wdt_interrupt">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTAD">
+        <DataElement key="ISRName" value="r_adc_interrupt">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTIIC00">
+        <DataElement key="ISRName" value="r_iic00_interrupt">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTSR0">
+        <DataElement key="ISRName" value="r_uart0_interrupt_receive">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTST0">
+        <DataElement key="ISRName" value="r_uart0_interrupt_send">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTCSI00">
+        <DataElement key="ISRName" value="r_csi00_interrupt">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTP1">
+        <DataElement key="ISRName" value="r_intc1_interrupt">
+        </DataElement>
+      </SerializableData>
+      <SerializableData name="INTP0">
+        <DataElement key="ISRName" value="r_intc0_interrupt">
         </DataElement>
       </SerializableData>
     </SerializableData>
@@ -574,13 +608,17 @@
     </DataElement>
     <DataElement key="GOStart" value="">
     </DataElement>
+    <DataElement key="FitCompatibilityMode" value="Disabled">
+    </DataElement>
+    <DataElement key="ADC_ADS" value="">
+    </DataElement>
   </SerializableData>
   <SerializableData name="6b704b16-cf94-4c9e-98b5-3d172383f648">
     <SerializableData name="DeviceCreadedMacros">
       <SerializableData name="CGC">
         <DataElement key="visible" value="True">
         </DataElement>
-        <DataElement key="error" value="InputError">
+        <DataElement key="error" value="NoError">
         </DataElement>
         <DataElement key="inuse" value="Used">
         </DataElement>
@@ -3038,7 +3076,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3062,7 +3100,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3090,7 +3128,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3108,13 +3146,13 @@
             </DataElement>
             <DataElement key="PinNote" value="">
             </DataElement>
-            <DataElement key="PinIoDirty" value="False">
+            <DataElement key="PinIoDirty" value="True">
             </DataElement>
             <DataElement key="PinStateDirty" value="False">
             </DataElement>
             <DataElement key="PinLabelDirty" value="False">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3132,13 +3170,13 @@
             </DataElement>
             <DataElement key="PinNote" value="">
             </DataElement>
-            <DataElement key="PinIoDirty" value="False">
+            <DataElement key="PinIoDirty" value="True">
             </DataElement>
             <DataElement key="PinStateDirty" value="False">
             </DataElement>
             <DataElement key="PinLabelDirty" value="False">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3162,7 +3200,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3186,7 +3224,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3210,7 +3248,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3234,7 +3272,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3258,7 +3296,7 @@
             </DataElement>
             <DataElement key="PinLabelDirty" value="True">
             </DataElement>
-            <DataElement key="PinDtvDirty" value="False">
+            <DataElement key="PinDtvDirty" value="True">
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
@@ -3749,7 +3787,7 @@
           </DataElement>
         </SerializableData>
         <SerializableData name="PIOR_DETERMINED">
-          <DataElement key="Enable" value="True">
+          <DataElement key="Enable" value="False">
           </DataElement>
         </SerializableData>
         <SerializableData name="dgvpior">
@@ -3759,6 +3797,3078 @@
           </DataElement>
           <DataElement key="Row2SelectedItem" value="P00">
           </DataElement>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_Port">
+    </SerializableData>
+    <SerializableData name="RL78G10_TAU">
+      <SerializableData name="TAU0">
+        <SerializableData name="Channel0">
+          <SerializableData name="cmbChnlFun">
+            <DataElement key="ContentItemCount" value="18">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="TauUnused">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="FUNITEMUSED">
+              </DataElement>
+              <DataElement key="Text" value="Unused">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauUnused">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_INTERVAL_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Interval timer">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInterval">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_SQUARE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Square wave output">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauSquare">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="TI00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_EXTCOUNT_FUN">
+              </DataElement>
+              <DataElement key="Text" value="External event counter">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauExtCount">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem5">
+              <DataElement key="Pin" value="TI00,TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_FREDIVIDER_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Divider function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauFreDivider">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem6">
+              <DataElement key="Pin" value="TI00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_INTERVALMEASURE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Input pulse interval measurement">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauIntervalMeasure">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem7">
+              <DataElement key="Pin" value="TI00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_LOWHIGHMEASURE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Input pulse high-/low-level width measurement">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauLowHighMeasure">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem8">
+              <DataElement key="Pin" value="TI00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_DELAYCOUNT_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Delay count function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauDelayCount">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem9">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="PWM output (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauPwmMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem10">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (software trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotSoftMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem11">
+              <DataElement key="Pin" value="TI00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (external trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotExternalMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem12">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Multiple PWM output (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauMultiPwmMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem13">
+              <DataElement key="Pin" value="TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="One-shot pulse output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem14">
+              <DataElement key="Pin" value="TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="PWM output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="PWM output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauPwmSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem15">
+              <DataElement key="Pin" value="TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Multiple PWM output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="Multiple PWM output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauMultiPwmSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem16">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (software trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotSoftMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem17">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (external trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotExternalMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem18">
+              <DataElement key="Pin" value="TI00,TO00">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="Channel1">
+          <SerializableData name="cmbChnlFun">
+            <DataElement key="ContentItemCount" value="18">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="TauUnused">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="FUNITEMUSED">
+              </DataElement>
+              <DataElement key="Text" value="Unused">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauUnused">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_INTERVAL_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Interval timer">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInterval">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_SQUARE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Square wave output">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauSquare">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="TI01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_EXTCOUNT_FUN">
+              </DataElement>
+              <DataElement key="Text" value="External event counter">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauExtCount">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem5">
+              <DataElement key="Pin" value="TI01,TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_FREDIVIDER_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Divider function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauFreDivider">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem6">
+              <DataElement key="Pin" value="TI01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_INTERVALMEASURE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Input pulse interval measurement">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauIntervalMeasure">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem7">
+              <DataElement key="Pin" value="TI01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_LOWHIGHMEASURE_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Input pulse high-/low-level width measurement">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauLowHighMeasure">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem8">
+              <DataElement key="Pin" value="TI01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="TAU_DELAYCOUNT_FUN">
+              </DataElement>
+              <DataElement key="Text" value="Delay count function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauDelayCount">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem9">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="PWM output (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauPwmMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem10">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (software trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotSoftMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem11">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (external trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotExternalMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem12">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Multiple PWM output (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauMultiPwmMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem13">
+              <DataElement key="Pin" value="TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="One-shot pulse output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="One-shot pulse output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauOneShotSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex, CustomerMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem14">
+              <DataElement key="Pin" value="TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="PWM output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="PWM output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauPwmSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex, CustomerMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem15">
+              <DataElement key="Pin" value="TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Multiple PWM output (slave)">
+              </DataElement>
+              <DataElement key="Text" value="Multiple PWM output (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauMultiPwmSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex, CustomerMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem16">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (software trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotSoftMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem17">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (external trigger) (master)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotExternalMaster">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem18">
+              <DataElement key="Pin" value="TI01,TO01">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Two-channel input with one-shot pulse output function (slave)">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="TauInputOneShotSlave">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex, CustomerMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_PCLBUZ">
+      <SerializableData name="PCLBUZ0">
+        <SerializableData name="PCLBUZ_UNUSED">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="PCLBUZ_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="OUTPUT_CLOCK">
+          <DataElement key="ContentItemCount" value="8">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="4">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_00_PCLBUZ_OUTCLK_fMAIN0">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_01_PCLBUZ_OUTCLK_fMAIN1">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_02_PCLBUZ_OUTCLK_fMAIN2">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="4">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_03_PCLBUZ_OUTCLK_fMAIN3">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^3">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="8">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem5">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_04_PCLBUZ_OUTCLK_fMAIN4">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^4">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="16">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem6">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_05_PCLBUZ_OUTCLK_fMAIN5">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^11">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="2048">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem7">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_06_PCLBUZ_OUTCLK_fMAIN6">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^12">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="4096">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem8">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="PCLBUZ_CLOCK=_07_PCLBUZ_OUTCLK_fMAIN7">
+            </DataElement>
+            <DataElement key="Text" value="fMAIN/2^13">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="8192">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="txtPcl">
+          <DataElement key="Text" value="5000">
+          </DataElement>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_WDT">
+      <SerializableData name="WDT">
+        <SerializableData name="MODULE_UNUSE">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="MODULE_USED">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="rdoOperationEnable">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="rdoOperationStop">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="OVERFLOW_TIME">
+          <DataElement key="ContentItemCount" value="8">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="16">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^6 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="6">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^7 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="7">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^8 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="8">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^9 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="9">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem5">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^11 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="11">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem6">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^13 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="13">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem7">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^14 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="14">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem8">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="(2^16 - 1)/fIL">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="16">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="txtClkSelect">
+          <DataElement key="Text" value="4369.00">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="WINDOW_OPEN_TIME">
+          <DataElement key="ContentItemCount" value="3">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="100">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="50">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="50">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="75">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="75">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="100">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="100">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="INTERRUPT_USED">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="INTTERUPT_PRIOIRY">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="low">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="WDT_PRIORITY=High">
+            </DataElement>
+            <DataElement key="Text" value="High">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="high">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="WDT_PRIORITY=Level1">
+            </DataElement>
+            <DataElement key="Text" value="Level 1">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="level1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="WDT_PRIORITY=Level2">
+            </DataElement>
+            <DataElement key="Text" value="Level 2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="level2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="WDT_PRIORITY=Low">
+            </DataElement>
+            <DataElement key="Text" value="Low">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="low">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_ADC">
+      <SerializableData name="ADC">
+        <SerializableData name="ADC_UNUSE">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ADC_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="COMPARATOR_DISABLE">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="COMPARATOR_ENABLE">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="RESOLUTION_10BIT">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="RESOLUTION_8BIT">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_0">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_1">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_2">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_3">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_4">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_5">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="ANALOG_INPUT_6">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="CHANNEL_SELECTION">
+          <DataElement key="ContentItemCount" value="8">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="ANI0">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_00_AD_INPUT_CHANNEL_0">
+            </DataElement>
+            <DataElement key="Text" value="ANI0">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI0">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_01_AD_INPUT_CHANNEL_1">
+            </DataElement>
+            <DataElement key="Text" value="ANI1">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_02_AD_INPUT_CHANNEL_2">
+            </DataElement>
+            <DataElement key="Text" value="ANI2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_03_AD_INPUT_CHANNEL_3">
+            </DataElement>
+            <DataElement key="Text" value="ANI3">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI3">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem5">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_04_AD_INPUT_CHANNEL_4">
+            </DataElement>
+            <DataElement key="Text" value="ANI4">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI4">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem6">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_05_AD_INPUT_CHANNEL_5">
+            </DataElement>
+            <DataElement key="Text" value="ANI5">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI5">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem7">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_06_AD_INPUT_CHANNEL_6">
+            </DataElement>
+            <DataElement key="Text" value="ANI6">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="ANI6">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem8">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Channel_Select=_07_AD_INPUT_INTERREFVOLT">
+            </DataElement>
+            <DataElement key="Text" value="Internal reference voltage">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="internalvoltage">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="CONVERSION_MODE">
+          <DataElement key="ContentItemCount" value="2">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="Normal1">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_TIME_MODE=_00_AD_TIME_MODE_NORMAL_1">
+            </DataElement>
+            <DataElement key="Text" value="Normal 1">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="Normal1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_TIME_MODE=_02_AD_TIME_MODE_NORMAL_2">
+            </DataElement>
+            <DataElement key="Text" value="Normal 2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="Normal2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="CONVERSION_TIME">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="convtime0">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Conversion_time_level=_00_AD_CONVERSION_CLOCK_8">
+            </DataElement>
+            <DataElement key="Text" value="184/fCLK">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="convtime0">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Conversion_time_level=_08_AD_CONVERSION_CLOCK_4">
+            </DataElement>
+            <DataElement key="Text" value="92/fCLK">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="convtime1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Conversion_time_level=_10_AD_CONVERSION_CLOCK_2">
+            </DataElement>
+            <DataElement key="Text" value="xxx/fCLK">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="convtime2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="Conversion_time_level=_18_AD_CONVERSION_CLOCK_1">
+            </DataElement>
+            <DataElement key="Text" value="xxx/fCLK">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="convtime3">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="CONVERSION_TIME_VALUE">
+          <DataElement key="Text" value="9.2">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="INTERRUPT_USED">
+          <DataElement key="Checked" value="True">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="INTERRUPT_PRIORITY">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="Low">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_INT_PRIORITY=High">
+            </DataElement>
+            <DataElement key="Text" value="High">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="High">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_INT_PRIORITY=Level1">
+            </DataElement>
+            <DataElement key="Text" value="Level 1">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="Level1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_INT_PRIORITY=Level2">
+            </DataElement>
+            <DataElement key="Text" value="Level 2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="Level2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="AD_INT_PRIORITY=Low">
+            </DataElement>
+            <DataElement key="Text" value="Low">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="Low">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="CustomData">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentText" value="184/fCLK">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Tag" value="Conversion_time_level=_00_AD_CONVERSION_CLOCK_8">
+            </DataElement>
+            <DataElement key="Text" value="184/fCLK">
+            </DataElement>
+            <DataElement key="Attach" value="convtime0">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+          </SerializableData>
+          <DataElement key="LastItem" value="1">
+          </DataElement>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Tag" value="Conversion_time_level=_08_AD_CONVERSION_CLOCK_4">
+            </DataElement>
+            <DataElement key="Text" value="92/fCLK">
+            </DataElement>
+            <DataElement key="Attach" value="convtime1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Tag" value="Conversion_time_level=_10_AD_CONVERSION_CLOCK_2">
+            </DataElement>
+            <DataElement key="Text" value="xxx/fCLK">
+            </DataElement>
+            <DataElement key="Attach" value="convtime2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Tag" value="Conversion_time_level=_18_AD_CONVERSION_CLOCK_1">
+            </DataElement>
+            <DataElement key="Text" value="xxx/fCLK">
+            </DataElement>
+            <DataElement key="Attach" value="convtime3">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="False">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_SAU">
+      <SerializableData name="SAU0">
+        <SerializableData name="Channel0">
+          <SerializableData name="CHANNEL_FUNCTION">
+            <DataElement key="ContentItemCount" value="4">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="Unused">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Unused">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="Unused">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="UART0">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="CSI00">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="SCL00,SDA00">
+              </DataElement>
+              <DataElement key="Int" value="INTIIC00">
+              </DataElement>
+              <DataElement key="Fun" value="R_IIC00_Create,R_IIC00_Master_Send,R_IIC00_Master_Receive,R_IIC00_Stop,R_IIC00_StartCondition,R_IIC00_StopCondition,r_iic00_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="IIC_USED">
+              </DataElement>
+              <DataElement key="Text" value="IIC00">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="IIC">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+          <SerializableData name="DETAIL_FUNCTION">
+            <DataElement key="ContentItemCount" value="6">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="RXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTSR0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Receive,r_uart0_interrupt_receive">
+              </DataElement>
+              <DataElement key="Tag" value="UART_RECEIVE">
+              </DataElement>
+              <DataElement key="Text" value="Receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_R">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="TXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTST0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Send,r_uart0_interrupt_send">
+              </DataElement>
+              <DataElement key="Tag" value="UART_TRANSMIT">
+              </DataElement>
+              <DataElement key="Text" value="Transmit function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_T">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="RXD0,TXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTSR0,INTST0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Receive,R_UART0_Send,r_uart0_interrupt_receive,r_uart0_interrupt_send">
+              </DataElement>
+              <DataElement key="Tag" value="UART_BOTH">
+              </DataElement>
+              <DataElement key="Text" value="Transmit/receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_TR">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="_SCK00,SI00">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI00">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI00_Create,R_CSI00_Start,R_CSI00_Stop,R_CSI00_Receive,r_csi00_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_RECEIVE,CSI_MODE=_40_SAU_RECEPTION">
+              </DataElement>
+              <DataElement key="Text" value="Receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_R">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem5">
+              <DataElement key="Pin" value="_SCK00,SO00">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI00">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI00_Create,R_CSI00_Start,R_CSI00_Stop,R_CSI00_Send,r_csi00_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_TRANSMIT,CSI_MODE=_80_SAU_TRANSMISSION">
+              </DataElement>
+              <DataElement key="Text" value="Transmit function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_T">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem6">
+              <DataElement key="Pin" value="_SCK00,SI00,SO00">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI00">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI00_Create,R_CSI00_Start,R_CSI00_Stop,R_CSI00_Send_Receive,r_csi00_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_BOTH,CSI_MODE=_C0_SAU_RECEPTION_TRANSMISSION">
+              </DataElement>
+              <DataElement key="Text" value="Transmit/receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_TR">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="Channel1">
+          <SerializableData name="CHANNEL_FUNCTION">
+            <DataElement key="ContentItemCount" value="4">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="Unused">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="Unused">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="Unused">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="UART0">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="">
+              </DataElement>
+              <DataElement key="Text" value="CSI01">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="SCL01,SDA01">
+              </DataElement>
+              <DataElement key="Int" value="INTIIC01">
+              </DataElement>
+              <DataElement key="Fun" value="R_IIC01_Create,R_IIC01_Master_Send,R_IIC01_Master_Receive,R_IIC01_Stop,R_IIC01_StartCondition,R_IIC01_StopCondition,r_iic01_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="IIC_USED">
+              </DataElement>
+              <DataElement key="Text" value="IIC01">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="IIC">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+          <SerializableData name="DETAIL_FUNCTION">
+            <DataElement key="ContentItemCount" value="6">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="RXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTSR0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Receive,r_uart0_interrupt_receive">
+              </DataElement>
+              <DataElement key="Tag" value="UART_RECEIVE">
+              </DataElement>
+              <DataElement key="Text" value="Receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_R">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="TXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTST0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Send,r_uart0_interrupt_send">
+              </DataElement>
+              <DataElement key="Tag" value="UART_TRANSMIT">
+              </DataElement>
+              <DataElement key="Text" value="Transmit function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_T">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="RXD0,TXD0">
+              </DataElement>
+              <DataElement key="Int" value="INTSR0,INTST0">
+              </DataElement>
+              <DataElement key="Fun" value="R_UART0_Create,R_UART0_Start,R_UART0_Stop,R_UART0_Receive,R_UART0_Send,r_uart0_interrupt_receive,r_uart0_interrupt_send">
+              </DataElement>
+              <DataElement key="Tag" value="UART_BOTH">
+              </DataElement>
+              <DataElement key="Text" value="Transmit/receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="UART_TR">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="_SCK01,SI01">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI01">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI01_Create,R_CSI01_Start,R_CSI01_Stop,R_CSI01_Receive,r_csi01_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_RECEIVE,CSI_MODE=_40_SAU_RECEPTION">
+              </DataElement>
+              <DataElement key="Text" value="Receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_R">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem5">
+              <DataElement key="Pin" value="_SCK01,SO01">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI01">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI01_Create,R_CSI01_Start,R_CSI01_Stop,R_CSI01_Send,r_csi01_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_TRANSMIT,CSI_MODE=_80_SAU_TRANSMISSION">
+              </DataElement>
+              <DataElement key="Text" value="Transmit function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_T">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem6">
+              <DataElement key="Pin" value="_SCK01,SI01,SO01">
+              </DataElement>
+              <DataElement key="Int" value="INTCSI01">
+              </DataElement>
+              <DataElement key="Fun" value="R_CSI01_Create,R_CSI01_Start,R_CSI01_Stop,R_CSI01_Send_Receive,r_csi01_interrupt">
+              </DataElement>
+              <DataElement key="Tag" value="CSI_BOTH,CSI_MODE=_C0_SAU_RECEPTION_TRANSMISSION">
+              </DataElement>
+              <DataElement key="Text" value="Transmit/receive function">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="CSI_TR">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="False">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_INTP">
+      <SerializableData name="INTP">
+        <SerializableData name="INTP0">
+          <SerializableData name="INT_USED">
+            <DataElement key="Checked" value="False">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="INTP_EDGE">
+            <DataElement key="ContentItemCount" value="3">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="failing">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Falling">
+              </DataElement>
+              <DataElement key="Text" value="Falling">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="failing">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Rising">
+              </DataElement>
+              <DataElement key="Text" value="Rising">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="rising">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Both">
+              </DataElement>
+              <DataElement key="Text" value="Both">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="both">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+          <SerializableData name="INTTERUPT_PRIOIRY">
+            <DataElement key="ContentItemCount" value="4">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="low">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=High">
+              </DataElement>
+              <DataElement key="Text" value="High">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="high">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Level1">
+              </DataElement>
+              <DataElement key="Text" value="Level 1">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="level1">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Level2">
+              </DataElement>
+              <DataElement key="Text" value="Level 2">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="level2">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Low">
+              </DataElement>
+              <DataElement key="Text" value="Low">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="low">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="INTP1">
+          <SerializableData name="INT_USED">
+            <DataElement key="Checked" value="False">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="INTP_EDGE">
+            <DataElement key="ContentItemCount" value="3">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="failing">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Falling">
+              </DataElement>
+              <DataElement key="Text" value="Falling">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="failing">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Rising">
+              </DataElement>
+              <DataElement key="Text" value="Rising">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="rising">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="Both">
+              </DataElement>
+              <DataElement key="Text" value="Both">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="both">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+          <SerializableData name="INTTERUPT_PRIOIRY">
+            <DataElement key="ContentItemCount" value="4">
+            </DataElement>
+            <DataElement key="SelectedContentItem" value="low">
+            </DataElement>
+            <SerializableData name="ContentItem1">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=High">
+              </DataElement>
+              <DataElement key="Text" value="High">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="high">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem2">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Level1">
+              </DataElement>
+              <DataElement key="Text" value="Level 1">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="level1">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem3">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Level2">
+              </DataElement>
+              <DataElement key="Text" value="Level 2">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="level2">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+            <SerializableData name="ContentItem4">
+              <DataElement key="Pin" value="">
+              </DataElement>
+              <DataElement key="Int" value="">
+              </DataElement>
+              <DataElement key="Fun" value="">
+              </DataElement>
+              <DataElement key="Tag" value="INTP_PRIORITY=Low">
+              </DataElement>
+              <DataElement key="Text" value="Low">
+              </DataElement>
+              <DataElement key="CustomInValidMessage" value="">
+              </DataElement>
+              <DataElement key="Attach" value="low">
+              </DataElement>
+              <DataElement key="MutexType" value="NoMutex">
+              </DataElement>
+              <DataElement key="Visible" value="True">
+              </DataElement>
+              <DataElement key="CustomValid" value="Valid">
+              </DataElement>
+            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_KEY">
+      <SerializableData name="KEY">
+        <SerializableData name="cmbFlag">
+          <DataElement key="ContentItemCount" value="2">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="unused">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="FLAG_USAGE=_00_KR_FLAG_UNUSED">
+            </DataElement>
+            <DataElement key="Text" value="Unused">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="unused">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="FLAG_USAGE=_80_KR_FLAG_USED">
+            </DataElement>
+            <DataElement key="Text" value="Used">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="used">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="cmbEdge">
+          <DataElement key="ContentItemCount" value="2">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="failing">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="EDGE_DIRECTION=_00_KR_EDGE_FALLING">
+            </DataElement>
+            <DataElement key="Text" value="Falling">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="failing">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="EDGE_DIRECTION=_01_KR_EDGE_RISING">
+            </DataElement>
+            <DataElement key="Text" value="Rising">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="rising">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="INTTERUPT_PRIOIRY">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="low">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="INTKR_PRIORITY=High">
+            </DataElement>
+            <DataElement key="Text" value="High">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="high">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="INTKR_PRIORITY=Level1">
+            </DataElement>
+            <DataElement key="Text" value="Level 1">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="level1">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="INTKR_PRIORITY=Level2">
+            </DataElement>
+            <DataElement key="Text" value="Level 2">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="level2">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="INTKR_PRIORITY=Low">
+            </DataElement>
+            <DataElement key="Text" value="Low">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="low">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="KR0_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR1_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR2_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR3_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR4_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR5_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR6_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="KR7_USED">
+          <DataElement key="Checked" value="False">
+          </DataElement>
+        </SerializableData>
+      </SerializableData>
+    </SerializableData>
+    <SerializableData name="RL78G10_LVD">
+      <SerializableData name="SPC">
+        <SerializableData name="LVD_RESET_LEVEL_VLVI">
+          <DataElement key="ContentItemCount" value="4">
+          </DataElement>
+          <DataElement key="SelectedContentItem" value="4.20">
+          </DataElement>
+          <SerializableData name="ContentItem1">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="4.20">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="4.20">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem2">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="2.84">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="2.84">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem3">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="2.52">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="2.52">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
+          <SerializableData name="ContentItem4">
+            <DataElement key="Pin" value="">
+            </DataElement>
+            <DataElement key="Int" value="">
+            </DataElement>
+            <DataElement key="Fun" value="">
+            </DataElement>
+            <DataElement key="Tag" value="">
+            </DataElement>
+            <DataElement key="Text" value="2.11">
+            </DataElement>
+            <DataElement key="CustomInValidMessage" value="">
+            </DataElement>
+            <DataElement key="Attach" value="2.11">
+            </DataElement>
+            <DataElement key="MutexType" value="NoMutex">
+            </DataElement>
+            <DataElement key="Visible" value="True">
+            </DataElement>
+            <DataElement key="CustomValid" value="Valid">
+            </DataElement>
+          </SerializableData>
         </SerializableData>
       </SerializableData>
     </SerializableData>
