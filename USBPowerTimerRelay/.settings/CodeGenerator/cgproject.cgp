@@ -106,7 +106,7 @@
         </DataElement>
       </SerializableData>
       <SerializableData name="PinNumber_2">
-        <DataElement key="InusedAs" value="CGC##_RESET">
+        <DataElement key="InusedAs" value="">
         </DataElement>
       </SerializableData>
       <SerializableData name="PinNumber_3">
@@ -592,7 +592,7 @@
     </DataElement>
     <DataElement key="GB" value="True">
     </DataElement>
-    <DataElement key="GBValue" value="FFFFF9">
+    <DataElement key="GBValue" value="FFEFFD">
     </DataElement>
     <DataElement key="RRM" value="False">
     </DataElement>
@@ -2536,7 +2536,7 @@
           <SerializableData name="ClassContent">
             <DataElement key="FunctionName" value="_RESET">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="FunctionIO" value="I">
             </DataElement>
@@ -2544,12 +2544,6 @@
             </DataElement>
             <DataElement key="FunctionNote" value="">
             </DataElement>
-            <SerializableData name="InUsePins">
-              <SerializableData name="CG">
-                <DataElement key="0" value="2">
-                </DataElement>
-              </SerializableData>
-            </SerializableData>
           </SerializableData>
         </SerializableData>
         <SerializableData name="X2">
@@ -3082,15 +3076,15 @@
             </DataElement>
           </SerializableData>
         </SerializableData>
-        <SerializableData name="2">
+        <SerializableData name="9">
           <DataElement key="ClassNameShort" value="PiorPinSetting">
           </DataElement>
           <DataElement key="ClassNameFull" value="RenesasElectronics.MicomTool.CodeGenerator.PinView.PinView3.PiorPinSetting">
           </DataElement>
           <SerializableData name="ClassContent">
-            <DataElement key="PinNumber" value="2">
+            <DataElement key="PinNumber" value="9">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="PinNote" value="">
             </DataElement>
@@ -3104,10 +3098,30 @@
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
-            <SerializableData name="InUseFunctions">
-              <DataElement key="0" value="_RESET">
-              </DataElement>
-            </SerializableData>
+          </SerializableData>
+        </SerializableData>
+        <SerializableData name="2">
+          <DataElement key="ClassNameShort" value="PiorPinSetting">
+          </DataElement>
+          <DataElement key="ClassNameFull" value="RenesasElectronics.MicomTool.CodeGenerator.PinView.PinView3.PiorPinSetting">
+          </DataElement>
+          <SerializableData name="ClassContent">
+            <DataElement key="PinNumber" value="2">
+            </DataElement>
+            <DataElement key="InUse" value="False">
+            </DataElement>
+            <DataElement key="PinNote" value="">
+            </DataElement>
+            <DataElement key="PinIoDirty" value="True">
+            </DataElement>
+            <DataElement key="PinStateDirty" value="False">
+            </DataElement>
+            <DataElement key="PinLabelDirty" value="True">
+            </DataElement>
+            <DataElement key="PinDtvDirty" value="True">
+            </DataElement>
+            <DataElement key="PinDlvDirty" value="False">
+            </DataElement>
           </SerializableData>
         </SerializableData>
         <SerializableData name="3">
@@ -3150,7 +3164,7 @@
             </DataElement>
             <DataElement key="PinStateDirty" value="False">
             </DataElement>
-            <DataElement key="PinLabelDirty" value="False">
+            <DataElement key="PinLabelDirty" value="True">
             </DataElement>
             <DataElement key="PinDtvDirty" value="True">
             </DataElement>
@@ -3174,7 +3188,7 @@
             </DataElement>
             <DataElement key="PinStateDirty" value="False">
             </DataElement>
-            <DataElement key="PinLabelDirty" value="False">
+            <DataElement key="PinLabelDirty" value="True">
             </DataElement>
             <DataElement key="PinDtvDirty" value="True">
             </DataElement>
@@ -3237,30 +3251,6 @@
           </DataElement>
           <SerializableData name="ClassContent">
             <DataElement key="PinNumber" value="8">
-            </DataElement>
-            <DataElement key="InUse" value="False">
-            </DataElement>
-            <DataElement key="PinNote" value="">
-            </DataElement>
-            <DataElement key="PinIoDirty" value="True">
-            </DataElement>
-            <DataElement key="PinStateDirty" value="False">
-            </DataElement>
-            <DataElement key="PinLabelDirty" value="True">
-            </DataElement>
-            <DataElement key="PinDtvDirty" value="True">
-            </DataElement>
-            <DataElement key="PinDlvDirty" value="False">
-            </DataElement>
-          </SerializableData>
-        </SerializableData>
-        <SerializableData name="9">
-          <DataElement key="ClassNameShort" value="PiorPinSetting">
-          </DataElement>
-          <DataElement key="ClassNameFull" value="RenesasElectronics.MicomTool.CodeGenerator.PinView.PinView3.PiorPinSetting">
-          </DataElement>
-          <SerializableData name="ClassContent">
-            <DataElement key="PinNumber" value="9">
             </DataElement>
             <DataElement key="InUse" value="False">
             </DataElement>
@@ -3375,11 +3365,11 @@
           </DataElement>
         </SerializableData>
         <SerializableData name="VDD_40_55">
-          <DataElement key="Checked" value="False">
+          <DataElement key="Checked" value="True">
           </DataElement>
         </SerializableData>
         <SerializableData name="VDD_27_55">
-          <DataElement key="Checked" value="True">
+          <DataElement key="Checked" value="False">
           </DataElement>
         </SerializableData>
         <SerializableData name="VDD_24_55">
@@ -3405,7 +3395,7 @@
         <SerializableData name="INTERNAL_HIGH_CLOCK_FREQUENCY">
           <DataElement key="ContentItemCount" value="5">
           </DataElement>
-          <DataElement key="SelectedContentItem" value="fIH_20_01">
+          <DataElement key="SelectedContentItem" value="fIH_1.25_05">
           </DataElement>
           <SerializableData name="ContentItem1">
             <DataElement key="Pin" value="">
@@ -3775,15 +3765,15 @@
           </SerializableData>
         </SerializableData>
         <SerializableData name="txtfCLK">
-          <DataElement key="Text" value="20000 (fIH)">
+          <DataElement key="Text" value="1250 (fIH)">
           </DataElement>
         </SerializableData>
         <SerializableData name="RESET_PIN_UNUSED">
-          <DataElement key="Checked" value="False">
+          <DataElement key="Checked" value="True">
           </DataElement>
         </SerializableData>
         <SerializableData name="RESET_PIN_USED">
-          <DataElement key="Checked" value="True">
+          <DataElement key="Checked" value="False">
           </DataElement>
         </SerializableData>
         <SerializableData name="PIOR_DETERMINED">
@@ -4646,7 +4636,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="False">
+            <DataElement key="Visible" value="True">
             </DataElement>
             <DataElement key="CustomValid" value="Valid">
             </DataElement>
@@ -4668,7 +4658,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="False">
+            <DataElement key="Visible" value="True">
             </DataElement>
             <DataElement key="CustomValid" value="Valid">
             </DataElement>
@@ -4807,7 +4797,7 @@
           </SerializableData>
         </SerializableData>
         <SerializableData name="txtPcl">
-          <DataElement key="Text" value="5000">
+          <DataElement key="Text" value="312.5">
           </DataElement>
         </SerializableData>
       </SerializableData>
@@ -5496,7 +5486,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="True">
+            <DataElement key="Visible" value="False">
             </DataElement>
             <DataElement key="CustomValid" value="Valid">
             </DataElement>
@@ -5518,7 +5508,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="True">
+            <DataElement key="Visible" value="False">
             </DataElement>
             <DataElement key="CustomValid" value="Valid">
             </DataElement>
@@ -5554,7 +5544,7 @@
             </DataElement>
             <DataElement key="Tag" value="Conversion_time_level=_18_AD_CONVERSION_CLOCK_1">
             </DataElement>
-            <DataElement key="Text" value="xxx/fCLK">
+            <DataElement key="Text" value="23/fCLK">
             </DataElement>
             <DataElement key="CustomInValidMessage" value="">
             </DataElement>
@@ -5562,14 +5552,14 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="False">
+            <DataElement key="Visible" value="True">
             </DataElement>
             <DataElement key="CustomValid" value="Valid">
             </DataElement>
           </SerializableData>
         </SerializableData>
         <SerializableData name="CONVERSION_TIME_VALUE">
-          <DataElement key="Text" value="9.2">
+          <DataElement key="Text" value="147.2">
           </DataElement>
         </SerializableData>
         <SerializableData name="INTERRUPT_USED">
@@ -5684,7 +5674,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="True">
+            <DataElement key="Visible" value="False">
             </DataElement>
           </SerializableData>
           <DataElement key="LastItem" value="1">
@@ -5698,7 +5688,7 @@
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="True">
+            <DataElement key="Visible" value="False">
             </DataElement>
           </SerializableData>
           <SerializableData name="ContentItem3">
@@ -5716,13 +5706,13 @@
           <SerializableData name="ContentItem4">
             <DataElement key="Tag" value="Conversion_time_level=_18_AD_CONVERSION_CLOCK_1">
             </DataElement>
-            <DataElement key="Text" value="xxx/fCLK">
+            <DataElement key="Text" value="23/fCLK">
             </DataElement>
             <DataElement key="Attach" value="convtime3">
             </DataElement>
             <DataElement key="MutexType" value="NoMutex">
             </DataElement>
-            <DataElement key="Visible" value="False">
+            <DataElement key="Visible" value="True">
             </DataElement>
           </SerializableData>
         </SerializableData>
@@ -6875,11 +6865,11 @@
   </SerializableData>
   <SerializableData name="b6521a8f-ae00-4e6b-8ad9-3f65b306d1b9">
     <SerializableData name="DataKey_fCLK">
-      <DataElement key="DataValue" value="20000">
+      <DataElement key="DataValue" value="1250">
       </DataElement>
     </SerializableData>
     <SerializableData name="DataKey_fMAIN">
-      <DataElement key="DataValue" value="20000">
+      <DataElement key="DataValue" value="1250">
       </DataElement>
     </SerializableData>
     <SerializableData name="DataKey_fIL">
@@ -6887,7 +6877,7 @@
       </DataElement>
     </SerializableData>
     <SerializableData name="DataKey_VDD_MIN">
-      <DataElement key="DataValue" value="2.7">
+      <DataElement key="DataValue" value="4.0">
       </DataElement>
     </SerializableData>
     <SerializableData name="DataKey_VDD_MAX">
