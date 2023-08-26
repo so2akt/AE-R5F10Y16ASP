@@ -43,7 +43,7 @@ Global variables and functions
 ***********************************************************************************************************************/
 /* Set option bytes */
 const uint8_t Option_Bytes[] __attribute__ ((section (".option_bytes"))) = 
-    {0xFFU, 0xEFU, 0xFDU, 0x05U};
+    {0xFDU, 0xEFU, 0xFDU, 0x85U};
 
 /* Set security ID */
 const uint8_t Security_Id[] __attribute__ ((section (".security_id"))) = 
@@ -75,7 +75,7 @@ const void *Vectors[] VECT_SECT  = {
 	// Address 0x10
 	R_Dummy,
 	// Address 0x12
-	R_Dummy,
+	r_tau0_channel0_interrupt,
 	// Address 0x14
 	R_Dummy,
 	// Address 0x16

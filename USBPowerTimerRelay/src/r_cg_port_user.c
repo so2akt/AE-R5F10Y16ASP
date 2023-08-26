@@ -18,39 +18,35 @@
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
-* File Name    : r_cg_interrupt_handlers.h
+* File Name    : r_cg_port_user.c
 * Version      : Code Generator for RL78/G10 V1.05.05.02 [08 Nov 2021]
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
-* Description  : This file declares interrupt handlers.
+* Description  : This file implements device driver for Port module.
 * Creation Date: 2023-08-26
 ***********************************************************************************************************************/
-#ifndef INTERRUPT_HANDLERS_H_H
-#define INTERRUPT_HANDLERS_H_H
 
 /***********************************************************************************************************************
-Macro definitions (Register bit)
+Includes
 ***********************************************************************************************************************/
+#include "r_cg_macrodriver.h"
+#include "r_cg_port.h"
+/* Start user code for include. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
+#include "r_cg_userdefine.h"
 
 /***********************************************************************************************************************
-Macro definitions
+Pragma directive
 ***********************************************************************************************************************/
+/* Start user code for pragma. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
 
 /***********************************************************************************************************************
-Typedef definitions
+Global variables and functions
 ***********************************************************************************************************************/
+/* Start user code for global. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
 
-/***********************************************************************************************************************
-Global functions
-***********************************************************************************************************************/
-//0x4
-void r_wdt_interrupt(void) __attribute__ ((interrupt));
-//0x12
-void r_tau0_channel0_interrupt(void) __attribute__ ((interrupt));
-/* Hardware Vectors */
-/* 0x0 */
-void PowerON_Reset(void) __attribute__ ((interrupt));
-/* idle Vectors */
-void R_Dummy(void) __attribute__ ((interrupt));
 
-#endif
+/* Start user code for adding. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
