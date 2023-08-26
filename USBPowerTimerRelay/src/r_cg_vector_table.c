@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements interrupt vector.
-* Creation Date: 2023-08-21
+* Creation Date: 2023-08-26
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -43,7 +43,7 @@ Global variables and functions
 ***********************************************************************************************************************/
 /* Set option bytes */
 const uint8_t Option_Bytes[] __attribute__ ((section (".option_bytes"))) = 
-    {0xFFU, 0xEFU, 0xFDU, 0x85U};
+    {0xFFU, 0xEFU, 0xFDU, 0x05U};
 
 /* Set security ID */
 const uint8_t Security_Id[] __attribute__ ((section (".security_id"))) = 

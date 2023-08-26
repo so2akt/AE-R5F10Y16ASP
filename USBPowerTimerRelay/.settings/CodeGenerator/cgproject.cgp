@@ -102,11 +102,11 @@
       <DataElement key="PinInformationCount" value="10">
       </DataElement>
       <SerializableData name="PinNumber_1">
-        <DataElement key="InusedAs" value="CGC##TOOL0">
+        <DataElement key="InusedAs" value="">
         </DataElement>
       </SerializableData>
       <SerializableData name="PinNumber_2">
-        <DataElement key="InusedAs" value="CGC##_RESET">
+        <DataElement key="InusedAs" value="">
         </DataElement>
       </SerializableData>
       <SerializableData name="PinNumber_3">
@@ -586,9 +586,9 @@
     </DataElement>
     <DataElement key="GIValue" value="">
     </DataElement>
-    <DataElement key="GO" value="True">
+    <DataElement key="GO" value="False">
     </DataElement>
-    <DataElement key="GOValue" value="85">
+    <DataElement key="GOValue" value="05">
     </DataElement>
     <DataElement key="GB" value="True">
     </DataElement>
@@ -2518,7 +2518,7 @@
           <SerializableData name="ClassContent">
             <DataElement key="FunctionName" value="TOOL0">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="FunctionIO" value="I">
             </DataElement>
@@ -2526,12 +2526,6 @@
             </DataElement>
             <DataElement key="FunctionNote" value="">
             </DataElement>
-            <SerializableData name="InUsePins">
-              <SerializableData name="CG">
-                <DataElement key="0" value="1">
-                </DataElement>
-              </SerializableData>
-            </SerializableData>
           </SerializableData>
         </SerializableData>
         <SerializableData name="_RESET">
@@ -2542,7 +2536,7 @@
           <SerializableData name="ClassContent">
             <DataElement key="FunctionName" value="_RESET">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="FunctionIO" value="I">
             </DataElement>
@@ -2550,12 +2544,6 @@
             </DataElement>
             <DataElement key="FunctionNote" value="">
             </DataElement>
-            <SerializableData name="InUsePins">
-              <SerializableData name="CG">
-                <DataElement key="0" value="2">
-                </DataElement>
-              </SerializableData>
-            </SerializableData>
           </SerializableData>
         </SerializableData>
         <SerializableData name="X2">
@@ -3072,7 +3060,7 @@
           <SerializableData name="ClassContent">
             <DataElement key="PinNumber" value="1">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="PinNote" value="">
             </DataElement>
@@ -3086,10 +3074,6 @@
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
-            <SerializableData name="InUseFunctions">
-              <DataElement key="0" value="TOOL0">
-              </DataElement>
-            </SerializableData>
           </SerializableData>
         </SerializableData>
         <SerializableData name="9">
@@ -3124,7 +3108,7 @@
           <SerializableData name="ClassContent">
             <DataElement key="PinNumber" value="2">
             </DataElement>
-            <DataElement key="InUse" value="True">
+            <DataElement key="InUse" value="False">
             </DataElement>
             <DataElement key="PinNote" value="">
             </DataElement>
@@ -3138,10 +3122,6 @@
             </DataElement>
             <DataElement key="PinDlvDirty" value="False">
             </DataElement>
-            <SerializableData name="InUseFunctions">
-              <DataElement key="0" value="_RESET">
-              </DataElement>
-            </SerializableData>
           </SerializableData>
         </SerializableData>
         <SerializableData name="3">
@@ -3361,11 +3341,11 @@
           </DataElement>
         </SerializableData>
         <SerializableData name="OCD_UNUSED">
-          <DataElement key="Checked" value="False">
+          <DataElement key="Checked" value="True">
           </DataElement>
         </SerializableData>
         <SerializableData name="OCD_USED">
-          <DataElement key="Checked" value="True">
+          <DataElement key="Checked" value="False">
           </DataElement>
         </SerializableData>
         <SerializableData name="RRM_UNUSED">
