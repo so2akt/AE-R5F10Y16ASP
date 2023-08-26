@@ -18,7 +18,7 @@
       <DataElement key="InterrputCount" value="11">
       </DataElement>
       <SerializableData name="Interrput_0">
-        <DataElement key="InusedAs" value="">
+        <DataElement key="InusedAs" value="INTWDTI">
         </DataElement>
       </SerializableData>
       <SerializableData name="Interrput_1">
@@ -600,7 +600,7 @@
     </DataElement>
     <DataElement key="GB" value="True">
     </DataElement>
-    <DataElement key="GBValue" value="FFEFFD">
+    <DataElement key="GBValue" value="FDEFFD">
     </DataElement>
     <DataElement key="RRM" value="False">
     </DataElement>
@@ -7057,7 +7057,7 @@
         <SerializableData name="OVERFLOW_TIME">
           <DataElement key="ContentItemCount" value="8">
           </DataElement>
-          <DataElement key="SelectedContentItem" value="16">
+          <DataElement key="SelectedContentItem" value="14">
           </DataElement>
           <SerializableData name="ContentItem1">
             <DataElement key="Pin" value="">
@@ -7237,7 +7237,7 @@
           </SerializableData>
         </SerializableData>
         <SerializableData name="txtClkSelect">
-          <DataElement key="Text" value="4369.00">
+          <DataElement key="Text" value="1092.20">
           </DataElement>
         </SerializableData>
         <SerializableData name="WINDOW_OPEN_TIME">
@@ -9134,6 +9134,26 @@
       <SerializableData name="TAU0">
         <SerializableData name="fCLK">
           <DataElement key="DataValue" value="1250">
+          </DataElement>
+        </SerializableData>
+      </SerializableData>
+      <SerializableData name="PCLBUZ0">
+        <SerializableData name="fMAIN">
+          <DataElement key="DataValue" value="1250">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="VDD_MAX">
+          <DataElement key="DataValue" value="5.5">
+          </DataElement>
+        </SerializableData>
+        <SerializableData name="VDD_MIN">
+          <DataElement key="DataValue" value="4.0">
+          </DataElement>
+        </SerializableData>
+      </SerializableData>
+      <SerializableData name="WDT">
+        <SerializableData name="fIL">
+          <DataElement key="DataValue" value="15">
           </DataElement>
         </SerializableData>
       </SerializableData>
