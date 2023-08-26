@@ -18,11 +18,11 @@
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
-* File Name    : r_cg_hardware_setup.c
+* File Name    : r_cg_port.c
 * Version      : Code Generator for RL78/G10 V1.05.05.02 [08 Nov 2021]
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
-* Description  : This file implements system initializing function.
+* Description  : This file implements device driver for Port module.
 * Creation Date: 2023-08-26
 ***********************************************************************************************************************/
 
@@ -30,9 +30,7 @@
 Includes
 ***********************************************************************************************************************/
 #include "r_cg_macrodriver.h"
-#include "r_cg_cgc.h"
 #include "r_cg_port.h"
-#include "r_cg_wdt.h"
 /* Start user code for include. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
@@ -49,35 +47,19 @@ Global variables and functions
 /* Start user code for global. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
 
-int HardwareSetup(void);
-void R_Systeminit(void);
-
 /***********************************************************************************************************************
-* Function Name: R_Systeminit
-* Description  : This function initializes every macro.
+* Function Name: R_PORT_Create
+* Description  : This function initializes the Port I/O.
 * Arguments    : None
 * Return Value : None
 ***********************************************************************************************************************/
-void R_Systeminit(void)
+void R_PORT_Create(void)
 {
-    PIOR = 0x00U;
-    R_CGC_Get_ResetSource();
-    R_PORT_Create();
-    R_CGC_Create();
-    R_WDT_Create();
-}
-/***********************************************************************************************************************
-* Function Name: HardwareSetup
-* Description  : This function initializes hardware setting.
-* Arguments    : None
-* Return Value : None
-***********************************************************************************************************************/
-int HardwareSetup(void)
-{
-    DI();
-    R_Systeminit();
-
-    return (1U);
+    P0 = _00_Pn0_OUTPUT_0;
+    PU0 = _02_PUn1_PULLUP_ON | _04_PUn2_PULLUP_ON | _08_PUn3_PULLUP_ON | _10_PUn4_PULLUP_ON;
+    PMC0 = _00_PMCn1_DI_ON | _00_PMCn2_DI_ON | _00_PMCn3_DI_ON | _00_PMCn4_DI_ON | _E1_PMC0_DEFAULT;
+    PM0 = _00_PMn0_MODE_OUTPUT | _02_PMn1_MODE_INPUT | _04_PMn2_MODE_INPUT | _08_PMn3_MODE_INPUT | 
+          _10_PMn4_MODE_INPUT | _E0_PM0_DEFAULT;
 }
 
 /* Start user code for adding. Do not edit comment generated here */
