@@ -18,11 +18,11 @@
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
-* File Name    : r_cg_vector_table.c
+* File Name    : r_cg_tau.c
 * Version      : Code Generator for RL78/G10 V1.05.05.02 [08 Nov 2021]
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
-* Description  : This file implements interrupt vector.
+* Description  : This file implements device driver for TAU module.
 * Creation Date: 2023-08-26
 ***********************************************************************************************************************/
 
@@ -30,6 +30,9 @@
 Includes
 ***********************************************************************************************************************/
 #include "r_cg_macrodriver.h"
+#include "r_cg_tau.h"
+/* Start user code for include. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
 
 /***********************************************************************************************************************
@@ -41,160 +44,68 @@ Pragma directive
 /***********************************************************************************************************************
 Global variables and functions
 ***********************************************************************************************************************/
-/* Set option bytes */
-const uint8_t Option_Bytes[] __attribute__ ((section (".option_bytes"))) = 
-    {0xFFU, 0xEFU, 0xFDU, 0x85U};
+/* Start user code for global. Do not edit comment generated here */
+/* End user code. Do not edit comment generated here */
 
-/* Set security ID */
-const uint8_t Security_Id[] __attribute__ ((section (".security_id"))) = 
-    {0x00U, 0x00U, 0x00U, 0x00U, 0x00U, 0x00U, 0x00U, 0x00U, 0x00U, 0x00U};
-
-
-#define VEC          __attribute__ ((section (".vec")))
-const void *HardwareVectors[] VEC  = {
-	// Address 0x0
-	PowerON_Reset,
-	// Secure for Debugging
-    (void*)0xFFFF
-};
-
-#define VECT_SECT          __attribute__ ((section (".vects")))
-const void *Vectors[] VECT_SECT  = {
-	// Address 0x4
-	r_wdt_interrupt,
-	// Address 0x6
-	R_Dummy,
-	// Address 0x8
-	R_Dummy,
-	// Address 0xA
-	R_Dummy,
-	// Address 0xC
-	R_Dummy,
-	// Address 0xE
-	R_Dummy,
-	// Address 0x10
-	R_Dummy,
-	// Address 0x12
-	r_tau0_channel0_interrupt,
-	// Address 0x14
-	R_Dummy,
-	// Address 0x16
-	R_Dummy,
-	// Address 0x18
-	R_Dummy,
-	// Address 0x1A
-	R_Dummy,
-	// Address 0x1C
-	R_Dummy,
-	// Address 0x1E
-	R_Dummy,
-	// Address 0x20
-	R_Dummy,
-	// Address 0x22
-	R_Dummy,
-	// Address 0x24
-	R_Dummy,
-	// Address 0x26
-	R_Dummy,
-	// Address 0x28
-	R_Dummy,
-	// Address 0x2A
-	R_Dummy,
-	// Address 0x2C
-	R_Dummy,
-	// Address 0x2E
-	R_Dummy,
-	// Address 0x30
-	R_Dummy,
-	// Address 0x32
-	R_Dummy,
-	// Address 0x34
-	R_Dummy,
-	// Address 0x36
-	R_Dummy,
-	// Address 0x38
-	R_Dummy,
-	// Address 0x3A
-	R_Dummy,
-	// Address 0x3C
-	R_Dummy,
-	// Address 0x3E
-	R_Dummy,
-	// Address 0x40
-	R_Dummy,
-	// Address 0x42
-	R_Dummy,
-	// Address 0x44
-	R_Dummy,
-	// Address 0x46
-	R_Dummy,
-	// Address 0x48
-	R_Dummy,
-	// Address 0x4A
-	R_Dummy,
-	// Address 0x4C
-	R_Dummy,
-	// Address 0x4E
-	R_Dummy,
-	// Address 0x50
-	R_Dummy,
-	// Address 0x52
-	R_Dummy,
-	// Address 0x54
-	R_Dummy,
-	// Address 0x56
-	R_Dummy,
-	// Address 0x58
-	R_Dummy,
-	// Address 0x5A
-	R_Dummy,
-	// Address 0x5C
-	R_Dummy,
-	// Address 0x5E
-	R_Dummy,
-	// Address 0x60
-	R_Dummy,
-	// Address 0x62
-	R_Dummy,
-	// Address 0x64
-	R_Dummy,
-	// Address 0x66
-	R_Dummy,
-	// Address 0x68
-	R_Dummy,
-	// Address 0x6A
-	R_Dummy,
-	// Address 0x6C
-	R_Dummy,
-	// Address 0x6E
-	R_Dummy,
-	// Address 0x70
-	R_Dummy,
-	// Address 0x72
-	R_Dummy,
-	// Address 0x74
-	R_Dummy,
-	// Address 0x76
-	R_Dummy,
-	// Address 0x78
-	R_Dummy,
-	// Address 0x7A
-	R_Dummy,
-	// Address 0x7C
-	R_Dummy,
-	// Address 0x7E
-	R_Dummy,
-};
 /***********************************************************************************************************************
-* Function Name: R_Dummy
-* Description  : None
+* Function Name: R_TAU0_Create
+* Description  : This function initializes the TAU0 module.
 * Arguments    : None
 * Return Value : None
 ***********************************************************************************************************************/
-void R_Dummy(void)
+void R_TAU0_Create(void)
 {
-    /* Start user code. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
+    TAU0EN = 1U;    /* supplies input clock */
+    TPS0 = _05_TAU_CKM0_FCLK_5 | _00_TAU_CKM1_FCLK_0;
+    /* Stop all channels */
+    TTH0 =_02_TAU_CH1_H8_STOP_TRG_ON;
+    TT0 = _01_TAU_CH0_STOP_TRG_ON | _02_TAU_CH1_STOP_TRG_ON;
+    /* Mask channel 0 interrupt */
+    TMMK00 = 1U;    /* disable INTTM00 interrupt */
+    TMIF00 = 0U;    /* clear INTTM00 interrupt flag */
+    /* Mask channel 1 interrupt */
+    TMMK01 = 1U;    /* disable INTTM01 interrupt */
+    TMIF01 = 0U;    /* clear INTTM01 interrupt flag */
+    /* Mask channel 1 higher 8 bits interrupt */
+    TMMK01H = 1U;    /* disable INTTM01H interrupt */
+    TMIF01H = 0U;    /* clear INTTM01H interrupt flag */
+    /* Set INTTM00 low priority */
+    TMPR100 = 1U;
+    TMPR000 = 1U;
+    /* Channel 0 used as interval timer */
+    TMR00H = _00_TAU_CLOCK_SELECT_CKM0 | _00_TAU_CLOCK_MODE_CKS | _00_TAU_COMBINATION_SLAVE | _00_TAU_TRIGGER_SOFTWARE;
+    TMR00L = _00_TAU_MODE_INTERVAL_TIMER | _00_TAU_START_INT_UNUSED;
+    /* Consecutive reading from the TDR0nH and TDR0nL registers and consecutive writing to the TDR0nH and TDR0nL
+    registers must be performed in the state where an interrupt is disabled by the DI instruction. */
+    TDR00H = _98_TAU_TDR00H_VALUE;
+    TDR00L = _96_TAU_TDR00L_VALUE;
+    TO0 &= (uint8_t)~_01_TAU_CH0_OUTPUT_VALUE_1;
+    TOE0 &= (uint8_t)~_01_TAU_CH0_OUTPUT_ENABLE;
+}
+/***********************************************************************************************************************
+* Function Name: R_TAU0_Channel0_Start
+* Description  : This function starts TAU0 channel 0 counter.
+* Arguments    : None
+* Return Value : None
+***********************************************************************************************************************/
+void R_TAU0_Channel0_Start(void)
+{
+    TMIF00 = 0U;    /* clear INTTM00 interrupt flag */
+    TMMK00 = 0U;    /* enable INTTM00 interrupt */
+    TS0 |= _01_TAU_CH0_START_TRG_ON;
+}
+/***********************************************************************************************************************
+* Function Name: R_TAU0_Channel0_Stop
+* Description  : This function stops TAU0 channel 0 counter.
+* Arguments    : None
+* Return Value : None
+***********************************************************************************************************************/
+void R_TAU0_Channel0_Stop(void)
+{
+    TT0 |= _01_TAU_CH0_STOP_TRG_ON;
+    /* Mask channel 0 interrupt */
+    TMMK00 = 1U;    /* disable INTTM00 interrupt */
+    TMIF00 = 0U;    /* clear INTTM00 interrupt flag */
 }
 
 /* Start user code for adding. Do not edit comment generated here */
