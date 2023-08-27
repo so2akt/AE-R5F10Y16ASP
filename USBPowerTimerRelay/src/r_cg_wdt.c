@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements device driver for WDT module.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -57,10 +57,6 @@ void R_WDT_Create(void)
 {
     WDTIMK = 1U;    /* disable INTWDTI interrupt */
     WDTIIF = 0U;    /* clear INTWDTI interrupt flag */
-    /* Set INTWDTI low priority */
-    WDTIPR1 = 1U;
-    WDTIPR0 = 1U;
-    WDTIMK = 0U;    /* enable INTWDTI interrupt */
 }
 /***********************************************************************************************************************
 * Function Name: R_WDT_Restart

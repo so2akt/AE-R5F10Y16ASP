@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements device driver for Port module.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -45,8 +45,35 @@ Pragma directive
 Global variables and functions
 ***********************************************************************************************************************/
 /* Start user code for global. Do not edit comment generated here */
+#define RELAY_OUT       (P0_bit.no0)
+#define RELAY_OUT_ON    (1)
+#define RELAY_OUT_OFF   (0)
+
+void vActivateRelay(void);
+void vDeactivateRelay(void);
 /* End user code. Do not edit comment generated here */
 
 
 /* Start user code for adding. Do not edit comment generated here */
+/**
+ * @fn vActivateRelay(void)
+ * @brief activate relay output.
+ */
+void vActivateRelay(void)
+{
+	RELAY_OUT = RELAY_OUT_ON;
+
+    return;
+}
+
+/**
+ * @fn vDeactivateRelay(void)
+ * @brief deactivate relay output.
+ */
+void vDeactivateRelay(void)
+{
+	RELAY_OUT = RELAY_OUT_OFF;
+
+    return;
+}
 /* End user code. Do not edit comment generated here */

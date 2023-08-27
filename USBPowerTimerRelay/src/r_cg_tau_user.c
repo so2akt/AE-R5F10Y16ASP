@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements device driver for TAU module.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -45,6 +45,8 @@ Pragma directive
 Global variables and functions
 ***********************************************************************************************************************/
 /* Start user code for global. Do not edit comment generated here */
+static boolean S_bIsTimedOut = true;    /* true: timed out, initialized as true */
+boolean bIsTimedOut(void);
 /* End user code. Do not edit comment generated here */
 
 /***********************************************************************************************************************
@@ -56,8 +58,19 @@ Global variables and functions
 void r_tau0_channel0_interrupt(void)
 {
     /* Start user code. Do not edit comment generated here */
+    S_bIsTimedOut = S_bIsTimedOut ? false : true;
     /* End user code. Do not edit comment generated here */
 }
 
 /* Start user code for adding. Do not edit comment generated here */
+/**
+ * @fn bIsTimedOut(void)
+ * @brief returns S_bIsTimedOut which shows TAU0 ch.0 is timed out or not.
+ * @return true: timed out, false: NOT timed out
+ * @sa r_tau0_channel0_interrupt
+ */
+boolean bIsTimedOut(void)
+{
+    return S_bIsTimedOut;
+}
 /* End user code. Do not edit comment generated here */

@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file declares interrupt handlers.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 #ifndef INTERRUPT_HANDLERS_H_H
 #define INTERRUPT_HANDLERS_H_H
@@ -43,8 +43,6 @@ Typedef definitions
 /***********************************************************************************************************************
 Global functions
 ***********************************************************************************************************************/
-//0x4
-void r_wdt_interrupt(void) __attribute__ ((interrupt));
 //0x12
 void r_tau0_channel0_interrupt(void) __attribute__ ((interrupt));
 /* Hardware Vectors */

@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements main function.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -48,6 +48,9 @@ Pragma directive
 Global variables and functions
 ***********************************************************************************************************************/
 /* Start user code for global. Do not edit comment generated here */
+extern void vActivateRelay(void);
+extern void vDeactivateRelay(void);
+extern boolean bIsTimedOut(void);
 /* End user code. Do not edit comment generated here */
 
 static void R_MAIN_UserInit(void);
@@ -63,7 +66,8 @@ void main(void)
     /* Start user code. Do not edit comment generated here */
     while (1U)
     {
-        ;
+        bIsTimedOut() ? vActivateRelay() : vDeactivateRelay();
+        R_WDT_Restart();
     }
     /* End user code. Do not edit comment generated here */
 }
@@ -77,6 +81,7 @@ static void R_MAIN_UserInit(void)
 {
     /* Start user code. Do not edit comment generated here */
     EI();
+    R_TAU0_Channel0_Start();
     /* End user code. Do not edit comment generated here */
 }
 

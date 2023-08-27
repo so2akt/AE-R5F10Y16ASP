@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements interrupt vector.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -61,7 +61,7 @@ const void *HardwareVectors[] VEC  = {
 #define VECT_SECT          __attribute__ ((section (".vects")))
 const void *Vectors[] VECT_SECT  = {
 	// Address 0x4
-	r_wdt_interrupt,
+	R_Dummy,
 	// Address 0x6
 	R_Dummy,
 	// Address 0x8

@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements general head file.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 #ifndef STATUS_H
 #define STATUS_H
