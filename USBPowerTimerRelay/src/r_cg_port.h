@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file implements device driver for Port module.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 #ifndef PORT_H
 #define PORT_H

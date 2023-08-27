@@ -23,7 +23,7 @@
 * Device(s)    : R5F10Y16
 * Tool-Chain   : gccrl78
 * Description  : This file includes user definition.
-* Creation Date: 2023-08-26
+* Creation Date: 
 ***********************************************************************************************************************/
 #ifndef _USER_DEF_H
 #define _USER_DEF_H
