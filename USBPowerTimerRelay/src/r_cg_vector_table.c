@@ -61,7 +61,7 @@ const void *HardwareVectors[] VEC  = {
 #define VECT_SECT          __attribute__ ((section (".vects")))
 const void *Vectors[] VECT_SECT  = {
 	// Address 0x4
-	r_wdt_interrupt,
+	R_Dummy,
 	// Address 0x6
 	R_Dummy,
 	// Address 0x8

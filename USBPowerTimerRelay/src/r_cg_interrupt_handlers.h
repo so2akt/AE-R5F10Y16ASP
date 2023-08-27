@@ -43,8 +43,6 @@ Typedef definitions
 /***********************************************************************************************************************
 Global functions
 ***********************************************************************************************************************/
-//0x4
-void r_wdt_interrupt(void) __attribute__ ((interrupt));
 //0x12
 void r_tau0_channel0_interrupt(void) __attribute__ ((interrupt));
 /* Hardware Vectors */
